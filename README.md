@@ -28,6 +28,7 @@ If you would like to automate this script add a cron job:
 
 2. append to the end (change the times if required): 
 
-# m h  dom mon dow   command
+ m h  dom mon dow   command
+
 20 2 * * * /full/path/to/VirusTotal-MultiFile-Uploader/VTupload.py
 
