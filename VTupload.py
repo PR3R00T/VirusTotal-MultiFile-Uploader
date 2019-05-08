@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # VT Comment Upload
-from virustotal import Virustotal
+from virustotal_python import Virustotal
 import glob
 import os
 from filehash import FileHash
