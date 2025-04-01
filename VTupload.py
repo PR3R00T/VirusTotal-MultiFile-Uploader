@@ -14,8 +14,8 @@ existing_sample_message = "#Malware #HP sample observed in the wild, Uploaded wi
 new_sample_message = "#Malware #HP new sample found in the wild, Uploaded with the use of VirusTotal-MultiFile-Uploader"
   
 #Populating list of Samples
-dionaea_bin_path = "/data/dionaea/binaries/*"
-adbhoney_bin_path = "/data/adbhoney/downloads/*"
+dionaea_bin_path = "~/tpotce/data/dionaea/binaries/*"
+adbhoney_bin_path = "~/tpotce/data/adbhoney/downloads/*"
 dionaea_listglob = glob.glob(dionaea_bin_path)
 adbhoney_listglob = glob.glob(adbhoney_bin_path)
 listglob = dionaea_listglob + adbhoney_listglob
@@ -24,8 +24,8 @@ sha256hasher = FileHash('sha256')
 timestr = time.strftime("%Y%m%d")
 
 #Log File paths
-output_file = "/data/VTupload"+timestr+".txt"
-patherror =  "/data/VTuploaderror" + timestr + ".txt"
+output_file = "~/tpotce/VTupload"+timestr+".txt"
+patherror =  "~/tpotce/VTuploaderror" + timestr + ".txt"
 
 # iterate each file
 for filename in listglob:
